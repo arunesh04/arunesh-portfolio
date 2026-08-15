@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Meta Tags -->
+  <title>Arunesh J | Software Development Engineer | Multi-Cloud, Go & Platform Infrastructure</title>
+  <meta name="description" content="Portfolio of Arunesh J, Software Development Engineer building multi-cloud (AWS, GCP, Azure, OCI) infrastructure, Go microservices, Terraform/OpenTofu modules, and production Kubernetes/Helm tooling.">
+  <meta name="keywords" content="Arunesh J, Software Development Engineer, Platform Engineer, Cloud Engineer, Golang, Kubernetes, Terraform, OpenTofu, Helm, AWS, GCP, Azure, OCI, DevOps">
+  <meta name="author" content="Arunesh J">
+  
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Arunesh J | Software Development Engineer">
+  <meta property="og:description" content="Building multi-cloud infrastructure and platform tooling in Go, Terraform, and Kubernetes.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Top Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" id="nav-brand-logo">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Arunesh.J</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#helm-doctor-demo" class="nav-link highlight-link">Helm Doctor <span class="badge-demo">Demo</span></a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Items & Theme Switcher -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <span class="icon sun-icon">☀️</span>
+          <span class="icon moon-icon">🌙</span>
+        </button>
+
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm resume-nav-btn" id="nav-resume-btn">
+          <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume PDF</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-glow glow-1"></div>
+      <div class="hero-bg-glow glow-2"></div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Status Badge -->
+          <div class="status-badge" id="hero-status-badge">
+            <span class="status-indicator-dot"></span>
+            <span class="status-text">Software Development Engineer II @ ZopDev</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering <span class="gradient-text">Multi-Cloud Platforms</span>, Kubernetes Systems &amp; Go Tooling.
+          </h1>
+
+          <p class="hero-subtitle">
+            Hi, I’m <strong>Arunesh J</strong>. I build high-resilience multi-cloud (AWS, GCP, Azure, OCI) infrastructure, automated IaC modules in OpenTofu/Terraform, and high-performance microservices in Go.
+          </p>
+
+          <!-- Hero CTAs -->
+          <div class="hero-cta-group">
+            <a href="resume.pdf" download="Arunesh_J_Resume.pdf" class="btn btn-primary" id="hero-download-resume">
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+
+            <a href="#helm-doctor-demo" class="btn btn-glass" id="hero-explore-demo">
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>Try Helm Doctor Demo</span>
+            </a>
+
+            <button class="btn btn-secondary copy-btn" id="hero-copy-email-btn" data-clipboard="aruneshj07@gmail.com">
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <!-- Quick Social Links -->
+          <div class="hero-social-links">
+            <a href="https://github.com/arunesh-j" target="_blank" rel="noopener noreferrer" class="social-chip" id="hero-github-link" title="GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>github.com/arunesh-j</span>
+            </a>
+
+            <a href="https://linkedin.com/in/arunesh04" target="_blank" rel="noopener noreferrer" class="social-chip" id="hero-linkedin-link" title="LinkedIn Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>linkedin.com/in/arunesh04</span>
+            </a>
+
+            <div class="social-chip location-chip" title="Location">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Bengaluru, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Terminal Card -->
+        <div class="hero-terminal" id="hero-terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">arunesh@zopdev-engine ~ platform-core.go</div>
+            <div class="terminal-actions">
+              <span class="terminal-badge">Go 1.23</span>
+            </div>
+          </div>
+          <div class="terminal-body">
+            <pre><code class="language-go"><span class="token-keyword">package</span> main
+
+<span class="token-keyword">import</span> (
+    <span class="token-string">"cloud.zop.dev/opentofu"</span>
+    <span class="token-string">"cloud.zop.dev/k8s/helm"</span>
+    <span class="token-string">"github.com/arunesh-j/helm-doctor"</span>
+)
+
+<span class="token-keyword">type</span> <span class="token-type">CloudEngineer</span> <span class="token-keyword">struct</span> {
+    Name        <span class="token-type">string</span>
+    Role        <span class="token-type">string</span>
+    Clouds      []<span class="token-type">string</span>
+    Specialties []<span class="token-type">string</span>
+}
+
+<span class="token-keyword">func</span> <span class="token-function">GetProfile</span>() <span class="token-type">CloudEngineer</span> {
+    <span class="token-keyword">return</span> <span class="token-type">CloudEngineer</span>{
+        Name: <span class="token-string">"Arunesh J"</span>,
+        Role: <span class="token-string">"Software Development Engineer II"</span>,
+        Clouds: []<span class="token-type">string</span>{<span class="token-string">"AWS"</span>, <span class="token-string">"GCP"</span>, <span class="token-string">"Azure"</span>, <span class="token-string">"OCI"</span>},
+        Specialties: []<span class="token-type">string</span>{
+            <span class="token-string">"OpenTofu / Terraform Modules"</span>,
+            <span class="token-string">"Helm Chart Catalog Automation"</span>,
+            <span class="token-string">"Go Microservices &amp; ML Auto-Tagging"</span>,
+            <span class="token-string">"Observability (Prometheus, Grafana, Mimir)"</span>,
+        },
+    }
+}
+<span class="token-comment">// Status: Ready to deploy scalable platform engineering</span></code></pre>
+          </div>
+          <div class="terminal-footer">
+            <span class="terminal-status-ok">✔ 50+ Checks Passing</span>
+            <span class="terminal-status-uptime">OCI Parity: 100% Complete</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Impact Metrics Section -->
+    <section class="metrics-section" id="metrics" aria-label="Key Impact Metrics">
+      <div class="container">
+        <div class="metrics-grid">
+          
+          <div class="metric-card" id="metric-clouds">
+            <div class="metric-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+            <div class="metric-content">
+              <div class="metric-number"><span class="counter" data-target="4">4</span> Multi-Clouds</div>
+              <p class="metric-label">Full Infrastructure Parity (AWS, GCP, Azure, OCI)</p>
+            </div>
+          </div>
+
+          <div class="metric-card" id="metric-helm">
+            <div class="metric-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <div class="metric-content">
+              <div class="metric-number"><span class="counter" data-target="20">20</span>+ Production Charts</div>
+              <p class="metric-label">Single-Click Value Schemas with Zero Manual YAML</p>
+            </div>
+          </div>
+
+          <div class="metric-card" id="metric-savings">
+            <div class="metric-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <div class="metric-content">
+              <div class="metric-number">~₹<span class="counter" data-target="80">80</span>K/mo</div>
+              <p class="metric-label">Cloud Cost Reduction via GCP Infra &amp; Observability Optimization</p>
+            </div>
+          </div>
+
+          <div class="metric-card" id="metric-checks">
+            <div class="metric-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <div class="metric-content">
+              <div class="metric-number"><span class="counter" data-target="50">50</span>+ Auto Checks</div>
+              <p class="metric-label">Built in Helm Doctor Platform for Security &amp; Reliability</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Summary Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Profile Overview</span>
+          <h2 class="section-title">Architecting Platform Tooling &amp; Cloud Automation</h2>
+          <p class="section-subtitle">Bridging software engineering, modern infrastructure-as-code, and intelligent cloud automation.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="about-icon-header">
+              <div class="badge-icon">🌐</div>
+              <h3>Multi-Cloud Infrastructure</h3>
+            </div>
+            <p>
+              Deep experience designing, maintaining, and deploying infrastructure across <strong>AWS, GCP, Azure, and Oracle Cloud (OCI)</strong>. Engineered OCI infrastructure end-to-end (networking, Kubernetes clusters, databases) to achieve 100% parity with existing clouds.
+            </p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="about-icon-header">
+              <div class="badge-icon">⚙️</div>
+              <h3>Self-Serve Platform Engineering</h3>
+            </div>
+            <p>
+              Author of reusable OpenTofu (Terraform) modules and 20+ production-grade Helm charts that empower developers to provision compute, databases, and networking straight from UI catalogs with zero manual YAML editing.
+            </p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="about-icon-header">
+              <div class="badge-icon">🤖</div>
+              <h3>Go Microservices &amp; ML Automation</h3>
+            </div>
+            <p>
+              Engineered standalone Go microservices utilizing ONNX-based machine learning models to automatically tag cloud resources based on metadata, complete with human-in-the-loop feedback loops for continuous retraining.
+            </p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="about-icon-header">
+              <div class="badge-icon">📊</div>
+              <h3>Observability &amp; SRE Stability</h3>
+            </div>
+            <p>
+              Managed DevOps and SRE operations for multi-tenant e-commerce architectures on GCP. Implemented Prometheus, Grafana, Mimir, and Loki pipelines, resolved high-severity production incidents, and reduced cloud expenditure by ~₹80,000/month.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical Skills &amp; Technology Stack</h2>
+          <p class="section-subtitle">Categorized toolsets utilized across production infrastructure, backend services, and platform tooling.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter-nav" role="tablist" aria-label="Skills Filter">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Technologies</button>
+          <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">Backend &amp; Languages</button>
+          <button class="filter-btn" data-filter="cloud" role="tab" aria-selected="false">Cloud &amp; IaC</button>
+          <button class="filter-btn" data-filter="k8s" role="tab" aria-selected="false">Kubernetes &amp; DevOps</button>
+          <button class="filter-btn" data-filter="observability" role="tab" aria-selected="false">Observability</button>
+          <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI &amp; Data</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skills-grid-container">
+
+          <!-- Go -->
+          <div class="skill-card glass-panel" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon go-icon">Go</div>
+              <div class="skill-info">
+                <h4>Go (Golang)</h4>
+                <span class="skill-badge primary">Primary Backend</span>
+              </div>
+            </div>
+            <p class="skill-desc">Microservices, CLI tooling, Helm Doctor analyzer, ONNX inference integration, high-concurrency systems.</p>
+            <div class="skill-tags">
+              <span>GoFr</span>
+              <span>REST APIs</span>
+              <span>Goroutines</span>
+              <span>Static Analysis</span>
+            </div>
+          </div>
+
+          <!-- Terraform / OpenTofu -->
+          <div class="skill-card glass-panel" data-category="cloud">
+            <div class="skill-header">
+              <div class="skill-icon tf-icon">IaC</div>
+              <div class="skill-info">
+                <h4>Terraform &amp; OpenTofu</h4>
+                <span class="skill-badge primary">Core Specialty</span>
+              </div>
+            </div>
+            <p class="skill-desc">Reusable modules for compute, networking (VPC/VNet), managed DBs, and multi-cloud infrastructure catalog.</p>
+            <div class="skill-tags">
+              <span>OpenTofu</span>
+              <span>Terraform Registry</span>
+              <span>State Mgmt</span>
+              <span>Multi-Tenant</span>
+            </div>
+          </div>
+
+          <!-- Kubernetes -->
+          <div class="skill-card glass-panel" data-category="k8s">
+            <div class="skill-header">
+              <div class="skill-icon k8s-icon">K8s</div>
+              <div class="skill-info">
+                <h4>Kubernetes &amp; GKE / OKE / EKS</h4>
+                <span class="skill-badge primary">Production</span>
+              </div>
+            </div>
+            <p class="skill-desc">Cluster lifecycle, ingress controllers, workload scaling, multi-tenant cluster provisioning and workload isolation.</p>
+            <div class="skill-tags">
+              <span>GKE</span>
+              <span>EKS</span>
+              <span>OCI OKE</span>
+              <span>Workloads</span>
+            </div>
+          </div>
+
+          <!-- Helm -->
+          <div class="skill-card glass-panel" data-category="k8s">
+            <div class="skill-header">
+              <div class="skill-icon helm-icon">Helm</div>
+              <div class="skill-info">
+                <h4>Helm Charts &amp; Tooling</h4>
+                <span class="skill-badge primary">20+ Production Charts</span>
+              </div>
+            </div>
+            <p class="skill-desc">Author of 20+ production charts with JSON Schema validation values, single-click install schemas, and Helm Doctor.</p>
+            <div class="skill-tags">
+              <span>Values Schema</span>
+              <span>Chart Testing</span>
+              <span>Helm 3</span>
+              <span>Automated Lints</span>
+            </div>
+          </div>
+
+          <!-- Multi-Cloud Platforms -->
+          <div class="skill-card glass-panel" data-category="cloud">
+            <div class="skill-header">
+              <div class="skill-icon cloud-icon">☁️</div>
+              <div class="skill-info">
+                <h4>AWS, GCP, Azure &amp; OCI</h4>
+                <span class="skill-badge secondary">Multi-Cloud</span>
+              </div>
+            </div>
+            <p class="skill-desc">Cross-cloud resource parity, IAM governance, VPC peering, cloud cost optimization, and multi-cloud resilience.</p>
+            <div class="skill-tags">
+              <span>AWS EC2/S3</span>
+              <span>GCP Compute/GKE</span>
+              <span>Azure</span>
+              <span>Oracle OCI</span>
+            </div>
+          </div>
+
+          <!-- Observability Stack -->
+          <div class="skill-card glass-panel" data-category="observability">
+            <div class="skill-header">
+              <div class="skill-icon obs-icon">📈</div>
+              <div class="skill-info">
+                <h4>Grafana, Prometheus &amp; Loki</h4>
+                <span class="skill-badge secondary">SRE &amp; Monitoring</span>
+              </div>
+            </div>
+            <p class="skill-desc">Production metrics, SLI/SLO dashboards, alert rules, high-cardinality metric storage with Grafana Mimir, and log aggregation.</p>
+            <div class="skill-tags">
+              <span>Prometheus</span>
+              <span>Grafana</span>
+              <span>Mimir</span>
+              <span>Loki</span>
+            </div>
+          </div>
+
+          <!-- CI/CD & Automation -->
+          <div class="skill-card glass-panel" data-category="k8s">
+            <div class="skill-header">
+              <div class="skill-icon cicd-icon">🚀</div>
+              <div class="skill-info">
+                <h4>GitHub Actions &amp; CircleCI</h4>
+                <span class="skill-badge secondary">CI/CD Automation</span>
+              </div>
+            </div>
+            <p class="skill-desc">Automated testing, container image builds, Helm chart linting, Terraform security checks, and elastically scaled deployments.</p>
+            <div class="skill-tags">
+              <span>GitHub Actions</span>
+              <span>CircleCI</span>
+              <span>Docker</span>
+              <span>Pipeline Automation</span>
+            </div>
+          </div>
+
+          <!-- Databases & Caching -->
+          <div class="skill-card glass-panel" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon db-icon">🗄️</div>
+              <div class="skill-info">
+                <h4>SQL, Redis &amp; APIs</h4>
+                <span class="skill-badge secondary">Data Layer</span>
+              </div>
+            </div>
+            <p class="skill-desc">Relational database provisioning, query optimization, high-speed Redis caching, and robust RESTful API design.</p>
+            <div class="skill-tags">
+              <span>PostgreSQL</span>
+              <span>MySQL</span>
+              <span>Redis</span>
+              <span>REST</span>
+            </div>
+          </div>
+
+          <!-- AI & Machine Learning -->
+          <div class="skill-card glass-panel" data-category="ai">
+            <div class="skill-header">
+              <div class="skill-icon ai-icon">🧠</div>
+              <div class="skill-info">
+                <h4>ONNX, Vertex AI &amp; Bedrock</h4>
+                <span class="skill-badge secondary">Applied AI</span>
+              </div>
+            </div>
+            <p class="skill-desc">ONNX runtime embedding in Go microservices for cloud auto-tagging, Generative AI chatbot deployment, and GAN model training.</p>
+            <div class="skill-tags">
+              <span>ONNX Models</span>
+              <span>Google Vertex AI</span>
+              <span>AWS Bedrock</span>
+              <span>GANs</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Timeline -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">Track record of building self-serve platform tools, optimizing multi-cloud costs, and maintaining production systems.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Experience 1: ZopDev (SDE II) -->
+          <div class="timeline-item" id="exp-zopdev">
+            <div class="timeline-marker">
+              <div class="marker-dot current"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-card-header">
+                <div>
+                  <div class="role-title-row">
+                    <h3 class="role-title">Software Development Engineer II</h3>
+                    <span class="badge-present">Current Role</span>
+                  </div>
+                  <div class="company-name">
+                    <span class="company-highlight">ZopDev</span> &bull; Bengaluru, Karnataka
+                  </div>
+                </div>
+                <div class="role-duration">
+                  <span class="duration-pill">Jul 2025 – Present</span>
+                </div>
+              </div>
+
+              <div class="timeline-highlights">
+                <span class="highlight-chip">OpenTofu Modules</span>
+                <span class="highlight-chip">OCI Full Parity</span>
+                <span class="highlight-chip">ONNX ML Auto-Tagging</span>
+                <span class="highlight-chip">₹80K/mo Savings</span>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>
+                  <strong>Multi-Cloud &amp; OCI Infrastructure:</strong> Maintain OpenTofu modules and Helm chart catalog for <a href="https://zop.dev" target="_blank" rel="noopener noreferrer" class="text-link">zop.dev</a>, completing Oracle Cloud Infrastructure (OCI) end-to-end (networking, Kubernetes, database) to achieve full parity with AWS, GCP, and Azure.
+                </li>
+                <li>
+                  <strong>Go &amp; Machine Learning Microservice:</strong> Built a standalone Go microservice that automatically tags cloud resources using ONNX-based machine learning models trained on resource metadata, establishing a human-in-the-loop feedback loop for continuous retraining.
+                </li>
+                <li>
+                  <strong>DevOps &amp; Cloud Cost Optimization:</strong> Provided DevOps support for a multi-tenant e-commerce platform on GCP, stabilizing infrastructure &amp; observability, cutting cloud costs by <strong>~INR 80K/month</strong>, and resolving production incidents.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2: ZopSmart (SDE Intern) -->
+          <div class="timeline-item" id="exp-zopsmart">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-card-header">
+                <div>
+                  <div class="role-title-row">
+                    <h3 class="role-title">Software Development Engineer (Intern)</h3>
+                  </div>
+                  <div class="company-name">
+                    <span class="company-highlight">ZopSmart</span> &bull; Bengaluru, Karnataka
+                  </div>
+                </div>
+                <div class="role-duration">
+                  <span class="duration-pill">Jul 2024 – Jun 2025</span>
+                </div>
+              </div>
+
+              <div class="timeline-highlights">
+                <span class="highlight-chip">20+ Production Helm Charts</span>
+                <span class="highlight-chip">Self-Serve IaC</span>
+                <span class="highlight-chip">Zero Manual YAML</span>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>
+                  <strong>Self-Serve Cloud Provisioning:</strong> Built reusable Terraform (OpenTofu) modules that let zop.dev users provision compute, databases, and networking on AWS, GCP, Azure, or OCI directly from the UI, completely eliminating manual scripting.
+                </li>
+                <li>
+                  <strong>Production Helm Chart Catalog:</strong> Authored and maintained <strong>20+ production Helm charts</strong> for zop.dev, each with a values schema enabling single-click install and configuration with zero manual YAML editing required.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 3: Centillion Labs (Platform Intern) -->
+          <div class="timeline-item" id="exp-centillion">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-card-header">
+                <div>
+                  <div class="role-title-row">
+                    <h3 class="role-title">Platform Engineer (Intern)</h3>
+                  </div>
+                  <div class="company-name">
+                    <span class="company-highlight">Centillion Labs</span> &bull; Bengaluru, Karnataka
+                  </div>
+                </div>
+                <div class="role-duration">
+                  <span class="duration-pill">Oct 2023 – Mar 2024</span>
+                </div>
+              </div>
+
+              <div class="timeline-highlights">
+                <span class="highlight-chip">Fintech IaC</span>
+                <span class="highlight-chip">AWS &amp; GKE</span>
+                <span class="highlight-chip">Vertex AI &amp; Bedrock</span>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>
+                  <strong>Fintech Multi-Cloud Architecture:</strong> Architected infrastructure as code (Terraform) for a fintech client across AWS and GKE, establishing CircleCI pipelines that enabled automated, elastically scaled deployments.
+                </li>
+                <li>
+                  <strong>Generative AI Chatbot:</strong> Developed an AI chatbot using Google Vertex AI and AWS Bedrock, deployed on AWS EC2 for reliable, low-latency conversational inference.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 4: Jeonbuk National University (DL Intern) -->
+          <div class="timeline-item" id="exp-jeonbuk">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-card-header">
+                <div>
+                  <div class="role-title-row">
+                    <h3 class="role-title">Deep Learning Engineer (Intern)</h3>
+                  </div>
+                  <div class="company-name">
+                    <span class="company-highlight">Jeonbuk National University</span> &bull; Jeonju, South Korea (Remote)
+                  </div>
+                </div>
+                <div class="role-duration">
+                  <span class="duration-pill">Mar 2023 – Sep 2023</span>
+                </div>
+              </div>
+
+              <div class="timeline-highlights">
+                <span class="highlight-chip">GAN Facial Prediction</span>
+                <span class="highlight-chip">Automated Training</span>
+                <span class="highlight-chip">Shell Scripting</span>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>
+                  <strong>GAN Model Development:</strong> Developed and trained Generative Adversarial Network (GAN) models for facial prediction, improving image fidelity through iterative architecture tuning and automated data preprocessing.
+                </li>
+                <li>
+                  <strong>Workflow Automation:</strong> Automated model training and code-execution workflows with shell scripting, reducing manual runtime and significantly improving training reproducibility.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Engineering Showcase</span>
+          <h2 class="section-title">Featured Projects &amp; Systems</h2>
+          <p class="section-subtitle">Open-source platform tools, cloud automation services, and Kubernetes grading systems.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Helm Doctor (Featured Primary) -->
+          <div class="project-card featured-project glass-panel" id="project-helm-doctor">
+            <div class="featured-badge">Featured System</div>
+            <div class="project-body">
+              <div class="project-header">
+                <div class="project-type">Kubernetes &bull; Go Platform</div>
+                <h3 class="project-title">Helm Doctor</h3>
+                <div class="project-period">Jun 2026 – Present</div>
+              </div>
+
+              <p class="project-summary">
+                A high-performance Go platform that grades Helm charts for production-readiness across <strong>Security, Reliability, and Upgradeability</strong> via 50+ automated rule checks, replacing subjective manual reviews with an instantaneous, deterministic score.
+              </p>
+
+              <div class="project-feature-list">
+                <div class="p-feature-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Instant In-Browser Analysis:</strong> No signup required, real-time feedback with remediation advice.</span>
+                </div>
+                <div class="p-feature-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>REST API &amp; CLI for CI/CD:</strong> Seamlessly integrate into GitHub Actions/GitLab CI pipelines to block misconfigured charts.</span>
+                </div>
+                <div class="p-feature-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Fleet-Wide Visibility:</strong> Aggregated dashboards and historical grade trends across multiple repositories.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-pills">
+                <span>Go (Golang)</span>
+                <span>Helm 3</span>
+                <span>Kubernetes AST</span>
+                <span>REST API</span>
+                <span>CI/CD Integration</span>
+                <span>Static Analysis</span>
+              </div>
+
+              <div class="project-cta-group">
+                <a href="#helm-doctor-demo" class="btn btn-primary btn-sm">
+                  <span>Launch Live Demo Below</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                  </svg>
+                </a>
+                <a href="https://github.com/arunesh-j" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub Profile</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Multi-Cloud OpenTofu Module Catalog -->
+          <div class="project-card glass-panel" id="project-cloud-catalog">
+            <div class="project-body">
+              <div class="project-header">
+                <div class="project-type">Infrastructure as Code &bull; Cloud Platform</div>
+                <h3 class="project-title">Multi-Cloud Self-Serve Catalog</h3>
+                <div class="project-period">ZopDev / ZopSmart</div>
+              </div>
+
+              <p class="project-summary">
+                Designed a comprehensive library of modular OpenTofu templates enabling developers to self-provision enterprise compute, networking (VPCs, Subnets, Gateways), and databases across AWS, GCP, Azure, and OCI via an interactive UI.
+              </p>
+
+              <div class="project-highlights-grid">
+                <div class="p-stat">
+                  <span class="p-stat-val">4 Clouds</span>
+                  <span class="p-stat-lbl">Unified Architecture</span>
+                </div>
+                <div class="p-stat">
+                  <span class="p-stat-val">0 Manual YAML</span>
+                  <span class="p-stat-lbl">100% UI Automated</span>
+                </div>
+              </div>
+
+              <div class="project-tech-pills">
+                <span>OpenTofu</span>
+                <span>Terraform</span>
+                <span>AWS</span>
+                <span>GCP</span>
+                <span>Azure</span>
+                <span>OCI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: ONNX Cloud Metadata Auto-Tagger -->
+          <div class="project-card glass-panel" id="project-ml-tagger">
+            <div class="project-body">
+              <div class="project-header">
+                <div class="project-type">Go Microservice &bull; Machine Learning</div>
+                <h3 class="project-title">ML Cloud Resource Auto-Tagger</h3>
+                <div class="project-period">ZopDev</div>
+              </div>
+
+              <p class="project-summary">
+                Autonomous Go microservice that inspects multi-cloud infrastructure assets and infers business unit, environment, and owner tags using ONNX-compiled models, reducing untagged cloud spend and automating compliance.
+              </p>
+
+              <div class="project-highlights-grid">
+                <div class="p-stat">
+                  <span class="p-stat-val">ONNX Runtime</span>
+                  <span class="p-stat-lbl">Sub-millisecond Inference</span>
+                </div>
+                <div class="p-stat">
+                  <span class="p-stat-val">HITL Cycle</span>
+                  <span class="p-stat-lbl">Continuous Model Retraining</span>
+                </div>
+              </div>
+
+              <div class="project-tech-pills">
+                <span>Go (Golang)</span>
+                <span>ONNX</span>
+                <span>Cloud IAM</span>
+                <span>Metadata Analysis</span>
+                <span>Active Learning</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Helm Doctor Demo Section -->
+    <section id="helm-doctor-demo" class="section helm-doctor-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag interactive-tag">Interactive Demo</span>
+          <h2 class="section-title">Helm Doctor Live Analyzer</h2>
+          <p class="section-subtitle">Experience how Helm Doctor runs 50+ automated checks across Security, Reliability, and Upgradeability. Select a preset or inspect the live score report below!</p>
+        </div>
+
+        <div class="demo-card glass-panel" id="demo-playground">
+          
+          <!-- Demo Controls Bar -->
+          <div class="demo-controls-bar">
+            <div class="demo-preset-selector">
+              <label for="sample-select" class="control-label">Load Preset Helm Chart:</label>
+              <select id="sample-select" class="sample-dropdown">
+                <option value="production-grade">⭐️ E-Commerce Production Chart (High Reliability &amp; Security)</option>
+                <option value="vulnerable-chart">⚠️ Legacy Microservice (Missing Probes &amp; Security Context)</option>
+                <option value="oci-optimized">🚀 Cloud-Native Ingress &amp; Database Chart (OCI/GCP)</option>
+              </select>
+            </div>
+            <button id="run-analysis-btn" class="btn btn-primary btn-sm">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>Run Helm Doctor Analysis</span>
+            </button>
+          </div>
+
+          <!-- Demo Workspace: Left Manifest, Right Scorecard -->
+          <div class="demo-workspace">
+            
+            <!-- Code Editor / Manifest Viewer -->
+            <div class="demo-pane demo-code-pane">
+              <div class="pane-header">
+                <span class="pane-title">values.yaml &amp; deployment.yaml</span>
+                <span class="pane-badge" id="chart-status-badge">Preset: Production Grade</span>
+              </div>
+              <div class="code-editor-wrap">
+                <pre><code id="demo-yaml-code" class="language-yaml"># Loading sample Helm manifest...</code></pre>
+              </div>
+            </div>
+
+            <!-- Scorecard & Audit Report -->
+            <div class="demo-pane demo-results-pane">
+              <div class="pane-header">
+                <span class="pane-title">Helm Doctor Assessment Report</span>
+                <span class="audit-status" id="audit-status-tag">Status: Ready</span>
+              </div>
+
+              <div class="results-content" id="results-content">
+                
+                <!-- Overall Grade Circle & Summary -->
+                <div class="grade-banner">
+                  <div class="grade-circle" id="overall-grade-circle">
+                    <span class="grade-letter" id="overall-grade-letter">A+</span>
+                    <span class="grade-caption">Grade</span>
+                  </div>
+                  <div class="grade-details">
+                    <h4 class="grade-title" id="grade-title">Production Ready</h4>
+                    <p class="grade-subtitle" id="grade-desc">Chart satisfies 96% of enterprise Kubernetes reliability and security policies.</p>
+                    <div class="grade-meta">
+                      <span id="passed-checks-count">48 / 50 Checks Passed</span> &bull; 
+                      <span id="scan-time">Scan Duration: 14ms</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Category Scores -->
+                <div class="category-scores-grid">
+                  <div class="cat-score-item">
+                    <div class="cat-header">
+                      <span>🛡️ Security Context</span>
+                      <strong id="cat-score-security">98%</strong>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" id="cat-bar-security" style="width: 98%;"></div></div>
+                  </div>
+
+                  <div class="cat-score-item">
+                    <div class="cat-header">
+                      <span>⚡ Reliability &amp; Probes</span>
+                      <strong id="cat-score-reliability">95%</strong>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" id="cat-bar-reliability" style="width: 95%;"></div></div>
+                  </div>
+
+                  <div class="cat-score-item">
+                    <div class="cat-header">
+                      <span>🔄 Upgradeability &amp; Schema</span>
+                      <strong id="cat-score-upgrade">100%</strong>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" id="cat-bar-upgrade" style="width: 100%;"></div></div>
+                  </div>
+                </div>
+
+                <!-- Detailed Audit Findings List -->
+                <div class="audit-findings-section">
+                  <h5 class="findings-heading">Key Automated Checks &amp; Recommendations:</h5>
+                  <div class="findings-list" id="findings-list">
+                    <!-- Dynamic Items rendered by script.js -->
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Terminal / CLI Preview Tab -->
+          <div class="demo-cli-strip">
+            <span class="cli-prompt">$</span>
+            <span class="cli-cmd">helm-doctor scan --chart ./charts/zop-app --format=json --strict</span>
+            <span class="cli-result">✓ Exit Code 0 (Production Safe)</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education &amp; Credentials</h2>
+        </div>
+
+        <div class="education-card glass-panel" id="education-card">
+          <div class="edu-icon-badge">🎓</div>
+          <div class="edu-details">
+            <div class="edu-header-row">
+              <div>
+                <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+                <h4 class="edu-major">Artificial Intelligence &amp; Data Science</h4>
+              </div>
+              <div class="edu-period">
+                <span class="duration-pill">Oct 2021 – May 2025</span>
+              </div>
+            </div>
+            
+            <div class="edu-institution-row">
+              <span class="institution-name">Kongu Engineering College</span>
+              <span class="institution-loc">&bull; Erode, Tamil Nadu, India</span>
+            </div>
+
+            <div class="edu-highlights">
+              <div class="cgpa-badge">
+                <span class="cgpa-label">Cumulative GPA:</span>
+                <span class="cgpa-val">8.64 / 10.0</span>
+              </div>
+              <div class="edu-focus-tag">
+                <span>Distinction Focus: Distributed Systems, Machine Learning, Cloud Architecture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recruiter Fast-Track & Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag contact-tag">Recruiter Fast-Track</span>
+          <h2 class="section-title">Let’s Build High-Impact Systems Together</h2>
+          <p class="section-subtitle">Looking for an SDE II / Platform Engineer with deep Go, Kubernetes, and Multi-Cloud IaC experience? Reach out directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-info-panel glass-panel">
+            <h3 class="panel-title">Direct Channels</h3>
+            <p class="panel-desc">Feel free to connect via email, LinkedIn, or phone for technical interviews, platform roles, or architecture discussions.</p>
+
+            <div class="channel-list">
+              
+              <!-- Email Card -->
+              <div class="channel-card">
+                <div class="channel-icon email-ic">✉️</div>
+                <div class="channel-data">
+                  <span class="channel-label">Email Address</span>
+                  <a href="mailto:aruneshj07@gmail.com" class="channel-value">aruneshj07@gmail.com</a>
+                </div>
+                <button class="copy-icon-btn copy-btn" data-clipboard="aruneshj07@gmail.com" title="Copy Email">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="channel-card">
+                <div class="channel-icon phone-ic">📞</div>
+                <div class="channel-data">
+                  <span class="channel-label">Phone &amp; WhatsApp</span>
+                  <a href="tel:+919952315199" class="channel-value">+91-9952315199</a>
+                </div>
+                <button class="copy-icon-btn copy-btn" data-clipboard="+919952315199" title="Copy Phone Number">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- LinkedIn Card -->
+              <div class="channel-card">
+                <div class="channel-icon in-ic">🔗</div>
+                <div class="channel-data">
+                  <span class="channel-label">LinkedIn Profile</span>
+                  <a href="https://linkedin.com/in/arunesh04" target="_blank" rel="noopener noreferrer" class="channel-value">linkedin.com/in/arunesh04</a>
+                </div>
+                <a href="https://linkedin.com/in/arunesh04" target="_blank" rel="noopener noreferrer" class="ext-link-btn" title="Open LinkedIn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- GitHub Card -->
+              <div class="channel-card">
+                <div class="channel-icon gh-ic">💻</div>
+                <div class="channel-data">
+                  <span class="channel-label">GitHub Profile</span>
+                  <a href="https://github.com/arunesh-j" target="_blank" rel="noopener noreferrer" class="channel-value">github.com/arunesh-j</a>
+                </div>
+                <a href="https://github.com/arunesh-j" target="_blank" rel="noopener noreferrer" class="ext-link-btn" title="Open GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+
+            <!-- Resume Download CTA in Contact -->
+            <div class="contact-resume-cta">
+              <a href="resume.pdf" download="Arunesh_J_Resume.pdf" class="btn btn-primary btn-block">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="contact-form-panel glass-panel">
+            <h3 class="panel-title">Quick Message / Recruiter Inquiry</h3>
+            <p class="panel-desc">Leave a note with your company and role details. Submitting opens a pre-filled direct email.</p>
+
+            <form id="contact-form" class="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="form-name">Your Name / Recruiter Name *</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Sarah Jenkins (Tech Recruiter)" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-company">Company / Organization *</label>
+                <input type="text" id="form-company" class="form-input" placeholder="e.g. Acme Cloud Corp" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Role Opportunity / Subject *</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="e.g. SDE II - Platform Infrastructure / Multi-Cloud" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message Details</label>
+                <textarea id="form-message" rows="4" class="form-input form-textarea" placeholder="Hi Arunesh, we loved your background in Go, OpenTofu, and Helm Doctor..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Send Message via Email</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Arunesh J</span>
+        <span class="footer-copy">&copy; 2026 Arunesh J. All rights reserved.</span>
+      </div>
+
+      <div class="footer-mid">
+        <span class="tech-tag">Crafted with Pure HTML5, CSS3 &amp; Vanilla JavaScript</span>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" id="back-to-top-btn" title="Back to top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
